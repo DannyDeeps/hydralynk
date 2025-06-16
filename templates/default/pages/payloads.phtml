@@ -1,0 +1,23 @@
+<?php $this->layout('layouts/default', ['pageTitle' => 'Payloads']) ?>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <h1>Payloads</h1>
+      <hr>
+    </div>
+
+    <div class="col-12">
+      <div class="d-flex">
+        <div class="d-flex flex-column gap-2 flew-grow">
+          <?php $this->insert('shards/payloads', ['payloads' => $payloads, 'class' => 'payloads']) ?>
+          <?php $this->insert('shards/create-payload', ['target' => '.payloads']) ?>
+        </div>
+        <div class="d-flex flex-column gap-2 flew-grow">
+          <?php $this->insert('shards/payloads', ['payloads' => [], 'class' => 'payloads-2']) ?>
+          <?php $this->insert('shards/create-payload', ['target' => '.payloads-2']) ?>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

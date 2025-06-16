@@ -1,0 +1,21 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Pingtree\Core\Models;
+
+use \PDO;
+
+abstract class AbstractModel {
+  protected static function connect(): PDO {
+    $dbFile = __DIR__ . '/../../../db/mypingtree.db';
+    try {
+      $db = new PDO("sqlite:$dbFile");
+      $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+      $db->exec('PRAGMA foreign_keys = ON;');
+      return $db;
+    } catch (\PDOException $e) {
+     die($e->getMessage());
+    }
+  }
+}

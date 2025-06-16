@@ -1,0 +1,42 @@
+GET http://mypingtree/api/payloads
+# Accept: text/html
+
+###
+
+GET http://mypingtree/api/payload/1
+# Accept: text/html
+
+###
+
+GET http://mypingtree/api/payload/1/nodes
+# Accept: text/html
+
+###
+
+POST http://mypingtree/api/payload
+Content-Type: application/json
+# Accept: text/html
+
+{
+  "name": "Payload 1",
+  "type": "json"
+}
+
+###
+
+PUT http://mypingtree/api/payload/1
+Content-Type: application/json
+# Accept: text/html
+
+# {
+#   "name": "updated again",
+#   "type": "json"
+# }
+{
+  "type": "json"
+}
+
+###
+
+DELETE http://mypingtree/api/payload/9
+# Accept: text/html

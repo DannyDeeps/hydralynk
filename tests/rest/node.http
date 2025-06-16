@@ -1,0 +1,35 @@
+GET http://mypingtree/api/payload/nodes
+# Accept: text/html
+
+###
+
+GET http://mypingtree/api/payload/node/1
+# Accept: text/html
+
+###
+
+POST http://mypingtree/api/payload/node
+Content-Type: application/json
+# Accept: text/html
+
+{
+  "payloadId": 1,
+  "name": "test2",
+  "value":"1",
+  "type": "integer"
+}
+
+###
+
+PUT http://mypingtree/api/payload/node/1
+Content-Type: application/json
+# Accept: text/html
+
+{
+  "value": "hello world"
+}
+
+###
+
+DELETE http://mypingtree/api/payload/node/2
+# Accept: text/html

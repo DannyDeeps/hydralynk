@@ -1,0 +1,26 @@
+<form class="payload">
+  <div class="name">
+    <input class="form-control form-control-sm" type="text" name="name" placeholder="Payload name">
+  </div>
+
+  <div class="type">
+    <select class="form-select form-select-sm" name="type">
+      <option selected>Payload type</option>
+      <option value="json">JSON</option>
+      <option value="xml">XML</option>
+    </select>
+  </div>
+
+  <div class="actions">
+    <button
+      type="submit"
+      class="btn btn-sm btn-success"
+      hx-post="/api/payload"
+      hx-headers='{"Accept": "text/html"}'
+      hx-target="<?=$target?>"
+      hx-swap="afterend"
+    >
+      <i class="fa-solid fa-plus"></i>
+    </button>
+  </div>
+</form>

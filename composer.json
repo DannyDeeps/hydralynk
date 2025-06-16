@@ -1,0 +1,21 @@
+{
+  "name": "danny/mypingtree",
+  "authors": [
+    {
+      "name": "Danny Huggins",
+      "email": "dannyhuggins@proton.me"
+    }
+  ],
+  "require-dev": {
+    "phpunit/phpunit": "^11.5",
+    "kint-php/kint": "^6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Pingtree\\": "src/"
+    }
+  },
+  "require": {
+    "league/plates": "^3.6"
+  }
+}

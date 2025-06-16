@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "loadtest": "artillery run ./tests/load/artillery-load-test.yml"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.4"
+  },
+  "devDependencies": {
+    "gulp": "^5.0.0"
+  }
+}

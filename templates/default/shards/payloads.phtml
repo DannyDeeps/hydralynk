@@ -1,0 +1,5 @@
+<div class="<?=$class?>">
+  <?php foreach ($payloads as $payload): ?>
+    <?php $this->insert('shards/payload', ['payload' => $payload]) ?>
+  <?php endforeach; ?>
+</div>

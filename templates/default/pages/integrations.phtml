@@ -1,0 +1,33 @@
+<?php $this->layout('layouts/default', ['pageTitle' => 'Integrations']) ?>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="table-responsive">
+        <caption>Integrations</caption>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Name</th>
+              <th scope="col">Type</th>
+              <th scope="col">Created At</th>
+              <th scope="col">Last Modified</th>
+            </tr>
+          </thead>
+          <tbody>
+            <?php foreach ($integrations as $integration): ?>
+              <tr>
+                <th scope="row"><?=$this->e($integration['id'])?></th>
+                <td><?=$this->e($integration['name'])?></td>
+                <td><?=$this->e($integration['type'])?></td>
+                <td><?=$this->e($integration['created_at'])?></td>
+                <td><?=$this->e($integration['modified_at'])?></td>
+              </tr>
+            <?php endforeach; ?>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

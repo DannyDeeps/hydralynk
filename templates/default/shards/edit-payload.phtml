@@ -1,0 +1,20 @@
+<div class="d-flex flex-column">
+  <pre>
+    <?=$payload['id']?>
+    <?=$payload['name']?>
+    <?=$payload['type']?>
+    <?=$payload['created_at']?>
+    <?=$payload['modified_at']?>
+    <?php foreach ($payload['data'] as $data): ?>
+      <!-- <pre> -->
+        <?=$data['id']?>
+        <?=$data['name']?>
+        <?=$data['value']?>
+        <?=$data['type']?>
+        <?=$data['parent_id']?>
+        <?=$data['created_at']?>
+        <?=$data['modified_at']?>
+      <!-- </pre> -->
+    <?php endforeach; ?>
+  </pre>
+</div>

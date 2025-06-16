@@ -1,0 +1,33 @@
+<div class="payload">
+  <div class="name">
+    <?=$payload['name']?>
+  </div>
+
+  <div class="type">
+    <?=strtoupper($payload['type'])?>
+  </div>
+
+  <div class="actions">
+    <button
+      type="submit"
+      class="btn btn-sm btn-primary"
+      hx-get="/api/payload/edit/<?=$payload['id']?>"
+      hx-target="closest .payload"
+      hx-swap="outerHTML"
+      hx-headers='{"Accept": "text/html"}'
+    >
+      <i class="fa-solid fa-pen-to-square"></i>
+    </button>
+
+    <button
+      type="button"
+      class="btn btn-sm btn-danger"
+      hx-delete="/api/payload/<?=$payload['id']?>"
+      hx-target="closest .payload"
+      hx-swap="outerHTML"
+      hx-headers='{"Accept": "text/html"}'
+    >
+      <i class="fa-solid fa-trash"></i>
+    </button>
+  </div>
+</div>
