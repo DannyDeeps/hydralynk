@@ -1,2 +1,4 @@
 cache/**/*
 vendor/**/*
+db/hydralynk.db
+node_modules
