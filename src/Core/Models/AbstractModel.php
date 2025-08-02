@@ -8,9 +8,9 @@ use \PDO;
 
 abstract class AbstractModel {
   protected static function connect(): PDO {
-    $dbFile = __DIR__ . '/../../../db/mypingtree.db';
+    $dbFile = __DIR__ . '/../../../db/hydralynk.db';
     try {
-      $db = new PDO("sqlite:$dbFile");
+      $db = PDO::connect("sqlite:$dbFile");
       $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
       $db->exec('PRAGMA foreign_keys = ON;');
       return $db;

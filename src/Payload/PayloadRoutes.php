@@ -4,7 +4,6 @@ namespace Pingtree\Payload;
 
 use Pingtree\Core\Routing\Router;
 
-
 final class PayloadRoutes {
   public static function register(Router $router): void {
     $router->addRoute('GET', '/payloads', PayloadViewController::class, 'payloads');

@@ -1,19 +1,19 @@
-GET http://mypingtree/api/payloads
+GET http://hydralynk.local/api/payloads
 # Accept: text/html
 
 ###
 
-GET http://mypingtree/api/payload/1
+GET http://hydralynk.local/api/payload/1
 # Accept: text/html
 
 ###
 
-GET http://mypingtree/api/payload/1/nodes
+GET http://hydralynk.local/api/payload/1/nodes
 # Accept: text/html
 
 ###
 
-POST http://mypingtree/api/payload
+POST http://hydralynk.local/api/payload
 Content-Type: application/json
 # Accept: text/html
 
@@ -24,7 +24,7 @@ Content-Type: application/json
 
 ###
 
-PUT http://mypingtree/api/payload/1
+PUT http://hydralynk.local/api/payload/1
 Content-Type: application/json
 # Accept: text/html
 
@@ -38,5 +38,5 @@ Content-Type: application/json
 
 ###
 
-DELETE http://mypingtree/api/payload/9
+DELETE http://hydralynk.local/api/payload/9
 # Accept: text/html

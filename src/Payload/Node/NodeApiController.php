@@ -124,7 +124,7 @@ final class NodeApiController extends ApiController {
     }
   }
 
-  public static function all(): void {
+  public static function all(Route $route): void {
     try {
       $wantsHtml = 'text/html' === ($_SERVER['HTTP_ACCEPT'] ?? '');
 

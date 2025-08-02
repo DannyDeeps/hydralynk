@@ -10,7 +10,7 @@ class TemplateController {
 
   public function __construct() {
     $this->engine = Engine::fromTheme(Theme::hierarchy([
-      Theme::new(__DIR__ . '/../../templates/default', ' Default')
+      Theme::new(TEMPLATES_DIR . '/default', 'Default')
     ]));
     $this->engine->setFileExtension('phtml');
   }

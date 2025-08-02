@@ -1,5 +1,5 @@
 {
-  "name": "danny/mypingtree",
+  "name": "dannydeeps/hydralynk",
   "authors": [
     {
       "name": "Danny Huggins",
@@ -8,7 +8,8 @@
   ],
   "require-dev": {
     "phpunit/phpunit": "^11.5",
-    "kint-php/kint": "^6.0"
+    "kint-php/kint": "^6.0",
+    "phpstan/phpstan": "^2.1"
   },
   "autoload": {
     "psr-4": {

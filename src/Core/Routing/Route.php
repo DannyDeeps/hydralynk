@@ -25,7 +25,7 @@ class Route {
         continue;
       }
 
-      if (str_contains($part, '#')) {
+      if (str_contains($part, '#') && ctype_digit($uriParts[$i])) {
         $this->params[substr($part, 1)] = (int) $uriParts[$i];
         continue;
       }

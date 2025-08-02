@@ -10,6 +10,9 @@ use Pingtree\Dashboard\DashboardRoutes;
 use Pingtree\Payload\PayloadRoutes;
 use Pingtree\Integration\IntegrationRoutes;
 
+const ROOT_DIR = __DIR__ . '/..';
+const TEMPLATES_DIR = ROOT_DIR . '/templates';
+
 $router = new Router;
 
 DashboardRoutes::register($router);
